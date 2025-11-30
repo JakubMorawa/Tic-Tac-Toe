@@ -20,16 +20,16 @@ let gameOn = true;
 
 function tictactoe(button) {
     if (gameOn) {
-        if (button.innerText == ''){
+        if (button.innerHTML == ''){
             position = parseInt(button.id)-1;
             if(board[Math.floor(position/3)][position%3] == 0){ 
     
                 board[Math.floor(position/3)][position%3] = turn;
     
                 if(turn == 1){
-                    button.innerText = "X";
+                    button.innerHTML = "X";
                 }else{
-                    button.innerText = "O";
+                    button.innerHTML = "O";
                 }
                 if(turn == 1){
                     turn = 2;

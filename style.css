@@ -3,6 +3,14 @@
     --crosses-color: rgb(25, 52, 82);
 }
 
+button {
+    appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    color: inherit;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     margin: 0px;
@@ -13,6 +21,7 @@ body {
     margin: 0px;
     text-align: center;
     width:100%;
+    color: var(--crosses-color);
 }
 
 .top h1{
@@ -87,4 +96,10 @@ body {
     font-size: 35px;
     border-radius: 8px;
     background-color: aliceblue;
+    border: 5px solid var(--edge-color);
+    color: var(--crosses-color);
+}
+
+.restartDiv button:hover{
+    background-color: rgb(202, 211, 219);
 }
