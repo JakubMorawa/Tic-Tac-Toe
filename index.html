@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="tictactoe.png">
+</head>
+<body>
+    <div class = "top">
+        <h1>Tic-Tac-Toe</h1>  
+    </div>
+    
+    <div class= "container">
+        <div id="board">
+            <div class="row-container">
+                <div class="square"><button id = "1" onclick="tictactoe(this)"></button></div>
+                <div class="square"><button id = "2" onclick="tictactoe(this)"></button></div>
+                <div class="square"><button id = "3" onclick="tictactoe(this)"></button></div>
+            </div>
+
+            <div class="row-container">
+                <div class="square"><button id = "4" onclick="tictactoe(this)"></button></div>
+                <div class="square"><button id = "5" onclick="tictactoe(this)"></button></div>
+                <div class="square"><button id = "6" onclick="tictactoe(this)"></button></div>
+            </div>
+
+            <div class="row-container">
+                <div class="square"><button id = "7" onclick="tictactoe(this)"></button></div>
+                <div class="square"><button id = "8" onclick="tictactoe(this)"></button></div>
+                <div class="square"><button id = "9" onclick="tictactoe(this)"></button></div>
+            </div>
+        </div>
+        
+    </div>  
+    
+
+    <div class = "result" id = "result">
+    </div>
+    <div class = "restartDiv"><button onclick="restart()">Restart</button></div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
