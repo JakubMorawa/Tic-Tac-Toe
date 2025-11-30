@@ -84,23 +84,27 @@ body {
     margin-top: 20px;
 }
 
-.restartDiv{
+.restart-container {
     margin-top: 30px;
-    display: flex;
-    justify-content: center;
     width: 100%;
+    display: flex;
+    justify-content: center;   /* centers horizontally */
+    align-items: center;       /* centers vertically (if height changes) */
 }
 
-.restartDiv button{
+.restart-btn {
     width: 150px;
     height: 60px;
     font-size: 35px;
+    font-family: "Poppins", sans-serif;
     border-radius: 8px;
     background-color: aliceblue;
     border: 5px solid var(--edge-color);
     color: var(--crosses-color);
+    cursor: pointer;
+    font-weight: 600;
 }
 
-.restartDiv button:hover{
+.restart-btn:hover {
     background-color: rgb(202, 211, 219);
 }
